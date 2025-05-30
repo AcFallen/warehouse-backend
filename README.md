@@ -25,6 +25,53 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Configuration
+
+This project uses environment variables for configuration. Before running the application, you need to set up your environment variables.
+
+### Environment Setup
+
+1. Copy the example environment file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit the `.env` file with your database configuration:
+   ```env
+   # Database Configuration
+   DB_TYPE=postgres
+   DB_HOST=localhost
+   DB_PORT=5433
+   DB_USERNAME=postgres
+   DB_PASSWORD=postgres
+   DB_DATABASE=warehouse_db
+   DB_SYNCHRONIZE=true
+   DB_AUTO_LOAD_ENTITIES=true
+   ```
+
+### Database Setup
+
+This project uses PostgreSQL as the database. You can use Docker to run PostgreSQL locally:
+
+```bash
+# Start PostgreSQL with Docker Compose
+docker-compose up -d postgres
+
+# Stop PostgreSQL
+docker-compose down
+```
+
+The Docker configuration creates a PostgreSQL database with the following default settings:
+
+- **Host**: localhost
+- **Port**: 5433 (mapped from container port 5432)
+- **Database**: warehouse_db
+- **Username**: postgres
+- **Password**: postgres
+
+**Note**: We use port 5433 to avoid conflicts with other PostgreSQL installations that might be running on the default port 5432.
+
 ## Project setup
 
 ```bash
