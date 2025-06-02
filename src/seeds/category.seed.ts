@@ -43,6 +43,56 @@ async function seedCategories() {
         description: 'Cleaning and maintenance products',
         isActive: true,
       },
+      {
+        name: 'Furniture',
+        description: 'Home and office furniture items',
+        isActive: true,
+      },
+      {
+        name: 'Toys',
+        description: 'Childrens toys and games',
+        isActive: true,
+      },
+      {
+        name: 'Books',
+        description: 'Various genres of books and literature',
+        isActive: true,
+      },
+      {
+        name: 'Clothing',
+        description: 'Apparel and accessories for all ages',
+        isActive: true,
+      },
+      {
+        name: 'Sports Equipment',
+        description: 'Gear and equipment for various sports',
+        isActive: true,
+      },
+      {
+        name: 'Gardening',
+        description: 'Tools and supplies for gardening and landscaping',
+        isActive: true,
+      },
+      {
+        name: 'Health & Beauty',
+        description: 'Personal care products and cosmetics',
+        isActive: true,
+      },
+      {
+        name: 'Automotive',
+        description: 'Car parts and accessories',
+        isActive: true,
+      },
+      {
+        name: 'Stationery',
+        description: 'Office supplies and stationery items',
+        isActive: true,
+      },
+      {
+        name: 'Pet Supplies',
+        description: 'Products for pets including food and accessories',
+        isActive: true,
+      },
     ];
 
     let seededCount = 0;
